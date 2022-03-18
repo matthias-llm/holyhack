@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-
 const NaMeeting = () =>  {
 	const [swiped, setSwipe] = useState(false);
 
