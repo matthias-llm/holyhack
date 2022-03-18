@@ -8,6 +8,7 @@ import Tijdens from "./components/tijdens_page";
 ReactDOM.render(
   <React.StrictMode>
     <Tijdens />
+    <NaMeeting />
   </React.StrictMode>,
   document.getElementById("root")
 );
