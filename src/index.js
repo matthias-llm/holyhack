@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import NaMeeting from './components/NaMeeting';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import NaMeeting from "./components/NaMeeting";
+import reportWebVitals from "./reportWebVitals";
+import Tijdens from "./components/tijdens_page";
 
 ReactDOM.render(
   <React.StrictMode>
-    <NaMeeting />
+    <Tijdens />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
