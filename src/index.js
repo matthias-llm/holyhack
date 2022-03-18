@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NaMeeting from './NaMeeting';
+import NaMeeting from '../components/NaMeeting';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
