@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import NaMeeting from "./components/NaMeeting";
 import reportWebVitals from "./reportWebVitals";
-import Tijdens from "./components/tijdens_page";
+import StartScreen from "./components/StartScreen";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Tijdens />
-    <NaMeeting />
+    <StartScreen />
   </React.StrictMode>,
   document.getElementById("root")
 );

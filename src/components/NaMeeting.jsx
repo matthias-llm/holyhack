@@ -3,7 +3,7 @@ import meeting from "../meeting/Meeting_20.mp4";
 import ReactPlayer from "react-player";
 import React from "react";
 
-const NaMeeting = () => {
+const Transcript = () => {
 	const reactPlayer = React.createRef();
 
 	const [clicked_1, setSwipe_1] = useState(false);
@@ -166,4 +166,4 @@ const NaMeeting = () => {
 	);
 };
 
-export default NaMeeting;
+export default Transcript;
