@@ -37,12 +37,29 @@ const Analytics = () => {
       {!clicked ? (
         <div />
       ) : (
-        <div className="w-1/2 flex font-bold flex-col items-center">
-          <p className="">Last session</p>
+        <div className="w-1/2 flex font-bold flex-col bg-[#7d7d7d]">
+          	<div className="flex flex-col items-center w-full">
+				<p>19/03/2022: Recruitment</p>
+			</div>
 
-		  <img src={require("../meeting/topictime.png")} />
-		  <img src={require("../meeting/talktime.png")} />
-		  <img src={require("../meeting/overallstatistics.png")} />
+			<div className="flex-col">
+				<p>TOPIC</p>
+				<li className="pl-2">Intro</li>
+				<li className="pl-2">Recruiting Process - 63% distracted</li>
+				<li className="pl-2">Wanted positions - 87% interested</li>
+				<li className="pl-2">Training and coaching</li>
+				<li className="pl-2">Attract new people</li>
+				<li className="pl-2">Outro</li>
+			</div>
+
+			<div className="flex flex-row">
+				<img src={require("../meeting/topictime.png")} className="w-96"/>	
+				<img src={require("../meeting/talktime.png")} className="w-72"/>
+			</div>
+
+			<div className="flex flex-row">
+				<img src={require("../meeting/overallstatistics.png")} />
+			</div>
         </div>
       )}
     </div>
