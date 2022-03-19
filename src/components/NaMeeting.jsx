@@ -314,8 +314,8 @@ const Transcript = () => {
             url={meeting}
             controls="true"
             ref={reactPlayer}
-            width="auto"
-            height="auto"
+            width="90%"
+            height="100%"
           />
         </div>
       </div>
