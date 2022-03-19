@@ -15,27 +15,27 @@ const NaMeeting = () => {
 
 	const onSwipe_1 = () => {
 		setSwipe_1(!clicked_1);
-		reactPlayer.current.seekTo(0);
+		if(!clicked_1) reactPlayer.current.seekTo(0);
 	};
 	const onSwipe_2 = () => {
 		setSwipe_2(!clicked_2);
-		reactPlayer.current.seekTo(20);
+		if(!clicked_2) reactPlayer.current.seekTo(20);
 	};
 	const onSwipe_3 = () => {
 		setSwipe_3(!clicked_3);
-		reactPlayer.current.seekTo(40);
+		if(!clicked_3) reactPlayer.current.seekTo(40);
 	};
 	const onSwipe_4 = () => {
 		setSwipe_4(!clicked_4);
-		reactPlayer.current.seekTo(60);
+		if(!clicked_4) reactPlayer.current.seekTo(60);
 	};
 	const onSwipe_5 = () => {
 		setSwipe_5(!clicked_5);
-		reactPlayer.current.seekTo(80);
+		if(!clicked_5) reactPlayer.current.seekTo(80);
 	};
 	const onSwipe_6 = () => {
 		setSwipe_6(!clicked_6);
-		reactPlayer.current.seekTo(150);
+		if(!clicked_6) reactPlayer.current.seekTo(150);
 	};
 
 	return (
@@ -159,8 +159,8 @@ const NaMeeting = () => {
 				)}
 			</div>
 
-			<div className="flex items-center">
-				<ReactPlayer className="" url={meeting} controls="true" ref={reactPlayer} />
+			<div className="flex items-center pr-10">
+				<ReactPlayer className="scale-100" url={meeting} controls="true" ref={reactPlayer} width="auto" height="auto" />
 			</div>
 		</div>
 	);
