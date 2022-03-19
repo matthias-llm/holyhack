@@ -1,4 +1,5 @@
 import { useState } from "react";
+<<<<<<< HEAD
 import meeting from "../meeting/Meeting_20.mp4";
 import { Player, ControlBar, BigPlayButton } from 'video-react';
 
@@ -134,6 +135,24 @@ const NaMeeting = () =>  {
 					<ControlBar autoHide={false}/>
 					<BigPlayButton position="center" />
 				</Player>
+=======
+
+const NaMeeting = () =>  {
+	const [swiped, setSwipe] = useState(false);
+
+	const onSwipe = () => {
+		setSwipe(!swiped);
+	};
+
+	return (
+		<div className="flex flex-row">
+			<div className="flex flex-col">
+
+			</div>
+
+			<div className="flex flex-col">
+
+>>>>>>> d3d91f39 (m)
 			</div>
 		</div>
 	);

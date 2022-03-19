@@ -8,7 +8,10 @@ import Tijdens from "./components/tijdens_page";
 ReactDOM.render(
   <React.StrictMode>
     <Tijdens />
+<<<<<<< HEAD
     <NaMeeting />
+=======
+>>>>>>> d3d91f39 (m)
   </React.StrictMode>,
   document.getElementById("root")
 );
