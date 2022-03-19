@@ -1,14 +1,5 @@
 import React from "react";
 import meeting from "../meeting/Meeting_20.mp4";
-<<<<<<< HEAD
-
-export const Tijdens = () => {
-  return (
-    <div id="main-container" className="min-h-screen min-w-screen">
-      <video width="100%" height="100%" preload="auto">
-        <source src={meeting} type="video/mp4" />
-      </video>
-=======
 import persons from "../meeting/person.png";
 import UI_zoom from "../meeting/UI_zoom.png";
 import { BellIcon } from "@heroicons/react/outline";
@@ -54,7 +45,6 @@ export const Tijdens = () => {
           <div className="border-4 bg-gray-400 h-20 w-60"></div>
         </div>
       </div>
->>>>>>> d3d91f39 (m)
     </div>
   );
 };
