@@ -1,6 +1,7 @@
 import { useState } from "react";
 import meeting from "../meeting/Meeting_20.mp4";
 import { Player, ControlBar, BigPlayButton } from "video-react";
+import ReactPlayer from "react-player";
 
 const NaMeeting = () => {
   const [clicked_1, setSwipe_1] = useState(false);
@@ -139,10 +140,7 @@ const NaMeeting = () => {
       </div>
 
       <div className="flex items-center">
-        <Player src={meeting}>
-          <ControlBar autoHide={false} />
-          <BigPlayButton position="center" />
-        </Player>
+        <ReactPlayer src={meeting} />
       </div>
     </div>
   );
