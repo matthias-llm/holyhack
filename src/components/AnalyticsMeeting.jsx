@@ -39,6 +39,10 @@ const Analytics = () => {
       ) : (
         <div className="w-1/2 flex font-bold flex-col items-center">
           <p className="">Last session</p>
+
+		  <img src={require("../meeting/topictime.png")} />
+		  <img src={require("../meeting/talktime.png")} />
+		  <img src={require("../meeting/overallstatistics.png")} />
         </div>
       )}
     </div>
