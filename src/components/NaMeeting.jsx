@@ -140,7 +140,7 @@ const NaMeeting = () => {
       </div>
 
       <div className="flex items-center">
-        <ReactPlayer src={meeting} />
+        <ReactPlayer url={meeting} />
       </div>
     </div>
   );
