@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import Tijdens from "./tijdens_page";
+import Tijdens from "./TijdensMeeting";
 import Transcript from "./NaMeeting";
 import Analytics from "./AnalyticsMeeting";
 
