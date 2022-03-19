@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const Analytics = () => {
-	const [clicked, setSwipe] = useState(false);
-	const onSwipe = () => {
-		setSwipe(!clicked);
-	}
+  const [clicked, setSwipe] = useState(false);
+  const onSwipe = () => {
+    setSwipe(!clicked);
+  };
 
   return (
     <div className="flex flex-row divide-x-2 divide-black min-h-screen">
@@ -15,7 +15,9 @@ const Analytics = () => {
         <div className="w-full items-start">
           <p className="font-bold text-2xl">Previous meetings</p>
           <div className="flex flex-col pl-5 py-3">
-            <li>19/03/2022: Recruitment</li>
+            <li>
+              <button>19/03/2022: Recruitment</button>
+            </li>
             <li>15/03/2022: Monthly meeting R&D</li>
             <li>10/03/2022: Weekly meeting project</li>
           </div>
@@ -23,23 +25,22 @@ const Analytics = () => {
         <div className="pt-20 flex justify-end">
           <img src={require("../meeting/activity.png")} alt="Lopo" />
         </div>
-        <div>
+        <div className="w-full flex flex-col items-center">
           <img
-            className="h-48 w-48"
-            src={require("../meeting/meeting_time.png")}
+            className="w-96 h-48"
+            src={require("../meeting/montly.png")}
             alt="Logo"
           />
         </div>
       </div>
 
-		{!clicked ? (
-				<div />
-			) : (
-				<div className="w-1/2 flex font-bold flex-col items-center">
-					<p className="">Last session</p>
-				</div>
-			)
-		}
+      {!clicked ? (
+        <div />
+      ) : (
+        <div className="w-1/2 flex font-bold flex-col items-center">
+          <p className="">Last session</p>
+        </div>
+      )}
     </div>
   );
 };
