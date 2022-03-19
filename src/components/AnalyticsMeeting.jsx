@@ -1,23 +1,15 @@
 const Analytics = () => {
 	return (
-		<div className="flex flex-col">
-			<div className="flex flex-row">
-				<p>Maand
-				</p>
+		<div className="flex flex-row divide-x-2 divide-black min-h-screen">
+			<div className="w-1/2 flex flex-col items-center">
+				<p className="bold">Past month</p>
 			</div>
 
+			<div className="w-1/2 flex flex-col items-center">
+				<p className="bold">Last session</p>
+			</div>
 		</div>
 	);
 }
 
 export default Analytics;
-
-// def makeexcel():
-// 	array = []
-// 	for i in range(2003):
-// 			array.append(random.randint(10,90))
-// 	workbook = xlsxwriter.Workbook("/Users/matthiasmonden/Documents/data.xlsx")
-// 	worksheet = workbook.add_worksheet()
-// 	for i in range(2003):
-// 			worksheet.write("A" + str(i), array[i])
-// 	workbook.close()
