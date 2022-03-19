@@ -16,7 +16,7 @@ const Analytics = () => {
           <p className="font-bold text-2xl">Previous meetings</p>
           <div className="flex flex-col pl-5 py-3">
             <li>
-              <button>19/03/2022: Recruitment</button>
+              <button onClick={onSwipe}>19/03/2022: Recruitment</button>
             </li>
             <li>15/03/2022: Monthly meeting R&D</li>
             <li>10/03/2022: Weekly meeting project</li>
