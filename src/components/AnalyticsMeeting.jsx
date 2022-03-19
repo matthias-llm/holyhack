@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 const Analytics = () => {
+	const [clicked, setSwipe] = useState(false);
+	const onSwipe = () => {
+		setSwipe(!clicked);
+	}
+
   return (
     <div className="flex flex-row divide-x-2 divide-black min-h-screen">
       <div className="w-1/2">
@@ -25,9 +32,14 @@ const Analytics = () => {
         </div>
       </div>
 
-      <div className="w-1/2 flex flex-col items-center">
-        <p className="bold">Last session</p>
-      </div>
+		{!clicked ? (
+				<div />
+			) : (
+				<div className="w-1/2 flex font-bold flex-col items-center">
+					<p className="">Last session</p>
+				</div>
+			)
+		}
     </div>
   );
 };
