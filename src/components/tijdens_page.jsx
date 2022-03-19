@@ -1,6 +1,7 @@
 import React from "react";
 import meeting from "../meeting/Meeting_20.mp4";
 import persons from "../meeting/person.png";
+
 import UI_zoom from "../meeting/UI_zoom.png";
 import { BellIcon } from "@heroicons/react/outline";
 
