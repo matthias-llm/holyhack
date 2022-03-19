@@ -7,6 +7,9 @@ const StartScreen = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen min-w-screen">
       <div className="pb-10">
+          <p className="">ProMeeting.AI</p>
+      </div>
+      <div className="pb-10">
         <button
           className="bg-gray-400 border-4 rounded-lg w-40 h-10"
           onClick={() =>
