@@ -13,6 +13,9 @@ const Transcript = () => {
   const [clicked_2, setSwipe_2] = useState(false);
   const [clicked_2_1, setSwipe_2_1] = useState(false);
   const [clicked_3, setSwipe_3] = useState(false);
+  const [clicked_3_1, setSwipe_3_1] = useState(false);
+  const [clicked_3_2, setSwipe_3_2] = useState(false);
+  const [clicked_3_3, setSwipe_3_3] = useState(false);
   const [clicked_4, setSwipe_4] = useState(false);
   const [clicked_5, setSwipe_5] = useState(false);
   const [clicked_6, setSwipe_6] = useState(false);
@@ -45,6 +48,18 @@ const Transcript = () => {
     setSwipe_3(!clicked_3);
     if (!clicked_3) reactPlayer.current.seekTo(52);
   };
+  const onSwipe_3_1 = () => {
+    setSwipe_3_1(!clicked_3_1);
+    if (!clicked_3_1) reactPlayer.current.seekTo(52);
+  };
+  const onSwipe_3_2 = () => {
+    setSwipe_3_2(!clicked_3_2);
+    if (!clicked_3_2) reactPlayer.current.seekTo(59);
+  };
+  const onSwipe_3_3 = () => {
+    setSwipe_3_3(!clicked_3_3);
+    if (!clicked_3_3) reactPlayer.current.seekTo(70);
+  };
   const onSwipe_4 = () => {
     setSwipe_4(!clicked_4);
     if (!clicked_4) reactPlayer.current.seekTo(114);
@@ -74,7 +89,7 @@ const Transcript = () => {
           <li>Mike Nolan - R&D</li>
           <li>Rob Windey - Business relations</li>
         </div>
-        <div className="flex flex-col w-1/3 justify-end px-4">
+        <div className="flex flex-col w-1/2 justify-end px-4">
           {!clicked_1 ? (
             <li>
               <button className="font-bold" onClick={onSwipe_1}>
@@ -148,7 +163,7 @@ const Transcript = () => {
                   <button className="pl-5 underline" onClick={onSwipe_1_3}>
                     Casey Cunningham:
                   </button>{" "}
-                  <button className="pl-1" onClick={onSwipe_1_3}>
+                  <button className="w-full pl-1" onClick={onSwipe_1_3}>
                     What workshops
                   </button>{" "}
                 </div>
@@ -184,28 +199,9 @@ const Transcript = () => {
               </li>
 
               {!clicked_2_1 ? (
-                <div className="flex flex-row">
-                  {" "}
-                  <button className="pl-5 underline" onClick={onSwipe_2_1}>
-                    April Williams:
-                  </button>{" "}
-                  <button className="pl-1" onClick={onSwipe_2_1}>
-                    Talent life cycle
-                  </button>{" "}
-                </div>
+                <div className="flex flex-row"> <button className="pl-5 underline" onClick={onSwipe_2_1}>April Williams:</button> <button className="pl-1" onClick={onSwipe_2_1}> Talent life cycle </button> </div>
               ) : (
-                <div>
-                  {" "}
-                  <button
-                    className="w-full pl-5 underline"
-                    onClick={onSwipe_2_1}
-                  >
-                    April Williams:
-                  </button>{" "}
-                  <button className="w-full pb-2" onClick={onSwipe_2_1}>
-                    Here you can see the talent life cycle we have in our mind.
-                  </button>{" "}
-                </div>
+                <div> <button className="w-full pl-5 underline" onClick={onSwipe_2_1}>April Williams:</button> <button className="w-full pb-2" onClick={onSwipe_2_1}>Here you can see the talent life cycle we have in our mind.</button> </div>
               )}
             </div>
           )}
@@ -224,37 +220,30 @@ const Transcript = () => {
                 </button>
               </li>
 
-              <p className="w-full pl-5">
-                April Williams: These companies provide the specific workshops
-                we are looking for.
-              </p>
-              <p className="w-full pl-5">
-                Casey Cunningham : Allright this is already a good beginning. Do
-                you have a list of which training each company can provide?
-              </p>
-              <p className="w-full pl-5">
-                Tori Kojuro: They have all kinds of training but we have not yet
-                made an overview.
-              </p>
-              <p className="w-full pl-5">
-                Casey Cunningham : Can you make this overview by Monday next
-                week? It would be really helpful to persuade new people.{" "}
-              </p>
-              <p className="w-full pl-5">
-                ADD NEW DEADLINE: Monday next week ( 21/03 ) : make overview
-              </p>
-              <p className="w-full pl-5">
-                April Williams: Allright we will get this done.
-              </p>
-              <p className="w-full pl-5">
-                Tori Kojuro: Do you want this overview per company or per age
-                category?{" "}
-              </p>
-              <p className="w-full pl-5">
-                Casey Cunningham: That is your call. I just think an overview
-                for our future employee is very helpful.
-              </p>
-              <p className="w-full pl-5">Tori Kojuro: Okay, will be fine</p>
+			  {!clicked_3_1 ? (
+                <div className="flex flex-row"> <button className="pl-5 underline" onClick={onSwipe_3_1}>April Williams:</button> <button className="pl-1" onClick={onSwipe_3_1}> Specific workshop </button> </div>
+              ) : (
+                <div> <button className="w-full pl-5 underline" onClick={onSwipe_3_1}>April Williams:</button> <button className="w-full pb-2" onClick={onSwipe_3_1}>These companies provide the specific workshops we are looking for.</button> </div>
+              )}
+
+			  {!clicked_3_2 ? (
+                <div className="flex flex-row"> <button className="pl-5 underline" onClick={onSwipe_3_2}>Casey Cunningham:</button> <button className="pl-1" onClick={onSwipe_3_2}> Training list?</button> </div>
+              ) : (
+                <div> <button className="w-full pl-5 underline" onClick={onSwipe_3_2}>Casey Cunningham:</button> <button className="w-full pb-2" onClick={onSwipe_3_2}>Allright this is already a good beginning. Do you have a list of which training each company can provide?</button> </div>
+              )}
+
+			  {!clicked_3_3 ? (
+                <div className="flex flex-row"> <button className="pl-5 underline" onClick={onSwipe_3_3}>Tori Kojuro:</button> <button className="pl-1" onClick={onSwipe_3_3}> Training list answer </button> </div>
+              ) : (
+                <div> <button className="w-full pl-5 underline" onClick={onSwipe_3_3}>Tori Kojuro:</button> <button className="w-full pb-2" onClick={onSwipe_3_3}>They have all kinds of training but we have not yet made an overview.</button> </div>
+              )}
+
+              <div className="flex flex-row"><p className="pl-5 underline">Casey Cunningham:</p> <p className="pl-1">Date proposal</p></div>
+
+              <p className="w-full pl-5 underline">April Williams</p>
+              <div className="flex flex-row"><p className="pl-5 underline"> Tori Kojuro:</p> <p className="pl-1">Company overview</p></div>
+              <p className="w-full pl-5 underline"> Casey Cunningham</p>
+              <p className="w-full pl-5 underline">Tori Kojuro</p>
             </div>
           )}
 
@@ -319,7 +308,7 @@ const Transcript = () => {
           )}
         </div>
 
-        <div className="flex items-center pr-10">
+        <div className="flex items-center pr-5">
           <ReactPlayer
             className="scale-100"
             url={meeting}

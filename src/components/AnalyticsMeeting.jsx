@@ -1,4 +1,4 @@
-import Image from "../../node_modules/next/image";
+// import Image from "../../node_modules/next/image";
 
 const Analytics = () => {
 	return (
@@ -6,7 +6,7 @@ const Analytics = () => {
 			<div className="w-1/2 flex flex-col items-center">
 				<p className="bold">Past month</p>
 
-				<Image src={require("../meeting/activity.png")} alt="Lopo"/>
+				{/* <Image src={require("../meeting/activity.png")} alt="Lopo"/> */}
 			</div>
 
 			<div className="w-1/2 flex flex-col items-center">
