@@ -2,7 +2,8 @@ const Analytics = () => {
 	return (
 		<div className="flex flex-col">
 			<div className="flex flex-row">
-				<p>Maand</p>
+				<p>Maand
+				</p>
 			</div>
 
 		</div>
